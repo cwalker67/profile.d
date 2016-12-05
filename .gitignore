@@ -1,1 +1,14 @@
 themes
+
+dotfiles/atom.symlink/.apm
+dotfiles/atom.symlink/.node-gyp
+dotfiles/atom.symlink/.storage
+dotfiles/atom.symlink/blob-store
+dotfiles/atom.symlink/compile-cache/
+dotfiles/atom.symlink/packages
+dotfiles/atom.symlink/storage
+dotfiles/atom.symlink/themes
+dotfiles/atom.symlink/blob-store
+dotfiles/atom.symlink/recovery
+
+dotfiles/git/gitconfig.local.symlink
