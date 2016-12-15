@@ -1,10 +1,15 @@
 #! /bin/zsh
 
 SCRIPTDIR=${0:a:h}
-for dir in 'development' 'docker' 'java' 'zsh'
+for dir in 'development' 'docker' 'java' 'zsh' 'homebrew'
 do
-    for file in `find $SCRIPTDIR/$dir -iname "*.zsh"`
+    for zshFile in `find $SCRIPTDIR/$dir -iname "*.zsh"`
     do
-        source $file
+        source $zshFile
+    done
+    for localFile in `find $SCRIPTDIR/$dir -iname "*.local"`
+    do
+        source $localFile
     done
 done
+

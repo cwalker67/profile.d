@@ -1,0 +1,1 @@
+alias stn='subl -n'
