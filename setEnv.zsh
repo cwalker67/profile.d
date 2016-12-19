@@ -1,7 +1,7 @@
 #! /bin/zsh
 
 SCRIPTDIR=${0:a:h}
-for dir in 'development' 'docker' 'java' 'zsh' 'homebrew'
+for dir in 'development' 'docker' 'java' 'zsh' 'homebrew' 'go'
 do
     for zshFile in `find $SCRIPTDIR/$dir -iname "*.zsh"`
     do
