@@ -55,3 +55,4 @@ brew 'mediainfo'
 brew 'plantuml'
 brew 'swagger-codegen'
 brew 'emacs', args: ['with-cocoa']
+brew 'tmate'
