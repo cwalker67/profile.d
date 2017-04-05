@@ -1,5 +1,3 @@
-themes
-
 dotfiles/atom.symlink/.apm
 dotfiles/atom.symlink/.node-gyp
 dotfiles/atom.symlink/.storage
