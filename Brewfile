@@ -1,58 +1,140 @@
-
-brew 'ack'
-brew 'go'
-brew 'grc'
-brew 'imagemagick'
-brew 'jp2a'
-brew 'jq'
-brew 'openssl'
-brew 'libcaca', args: ['with-imlib2']
-brew 'node'
-brew 'roundup'
-brew 'spaceman-diff'
-brew 'unrar'
-brew 'wget'
-brew 'coreutils'
-brew 'findutils', args: ['with-default-names']
-brew 'gawk'
-brew 'gnu-sed', args: ['with-default-names']
-brew 'watch'
-brew 'wget'
-brew 'ansible'
-brew 'ant', args: ['with-bcel', 'with-ivy']
-brew 'gradle'
-brew 'groovy'
-brew 'jmeter', args: ['with-plugins']
-brew 'maven'
-brew 'multitail'
-brew 'node', args: ['with-openssl']
-brew 'p7zip'
-brew 'sbt'
-brew 'scala', args: ['with-docs', 'with-src']
-brew 'subversion'
-brew 'tree'
-brew 'typesafe-activator'
-brew 'uncrustify'
-brew 'aalib'
-brew 'archey'
-brew 'asciinema'
-brew 'aview'
-brew 'fortune', args: ['without-offensive']
-brew 'freetype'
-brew 'gawk'
-brew 'git-crypt'
-brew 'gnu-sed', args:['with-default-names']
-brew 'jboss-forge'
-brew 'lastpass-cli', args:['--with-doc']
-brew 'nmap', args: ['with-pygtk']
-brew 'no-more-secrets'
-brew 'phantomjs'
-brew 'xz'
-brew 'irssi', args: ['with-dante']
-brew 'mongodb'
-brew 'ffmpeg', args: ['with-fdk-aac', 'with-fontconfig', 'with-freetype', 'with-frei0r', 'with-game-music-emu', 'with-libass', 'with-libbluray', 'with-libbs2b', 'with-libcaca', 'with-libebur128', 'with-libgsm', 'with-libmodplug', 'with-libsoxr', 'with-libssh', 'with-libvidstab', 'with-libvorbis', 'with-libvpx', 'with-opencore-amr', 'with-openh264', 'with-openjpeg', 'with-openssl', 'with-opus', 'with-rtmpdump', 'with-rubberband', 'with-schroedinger', 'with-sdl2', 'with-snappy', 'with-speex', 'with-tesseract', 'with-theora', 'with-tools', 'with-two-lame', 'with-wavpack', 'with-webp', 'with-x265', 'with-xz', 'with-zeromq', 'with-zimg']
-brew 'mediainfo'
-brew 'plantuml'
-brew 'swagger-codegen'
-brew 'emacs', args: ['with-cocoa']
-brew 'tmate'
+tap "caskroom/cask"
+tap "drone/drone"
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "aalib"
+brew "ack"
+brew "libyaml"
+brew "gdbm"
+brew "readline"
+brew "sqlite"
+brew "python"
+brew "ansible"
+brew "ant", args: ["with-bcel", "with-ivy"]
+brew "apr"
+brew "apr-util"
+brew "archey"
+brew "python3"
+brew "asciinema"
+brew "fontconfig"
+brew "gettext"
+brew "pixman"
+brew "cairo"
+brew "atk"
+brew "aview"
+brew "coreutils"
+brew "dante"
+brew "libev"
+brew "opam"
+brew "docker-machine-driver-xhyve"
+brew "doxygen"
+brew "emacs", args: ["with-cocoa"]
+brew "fdk-aac"
+brew "flac"
+brew "fribidi"
+brew "jpeg"
+brew "lame"
+brew "leptonica"
+brew "libogg"
+brew "libsamplerate"
+brew "libvorbis"
+brew "libsndfile"
+brew "little-cms2"
+brew "orc"
+brew "x264"
+brew "xvid"
+brew "ffmpeg", args: ["with-fdk-aac", "with-fontconfig", "with-freetype", "with-frei0r", "with-game-music-emu", "with-libass", "with-libbluray", "with-libbs2b", "with-libcaca", "with-libgsm", "with-libmodplug", "with-libsoxr", "with-libssh", "with-libvidstab", "with-libvorbis", "with-libvpx", "with-opencore-amr", "with-openh264", "with-openjpeg", "with-openssl", "with-opus", "with-rtmpdump", "with-rubberband", "with-schroedinger", "with-sdl2", "with-snappy", "with-speex", "with-tesseract", "with-theora", "with-tools", "with-two-lame", "with-wavpack", "with-webp", "with-x265", "with-xz", "with-zeromq", "with-zimg"]
+brew "findutils", args: ["with-default-names"]
+brew "fortune", args: ["without-offensive"]
+brew "frei0r"
+brew "game-music-emu"
+brew "gmp"
+brew "mpfr"
+brew "gawk"
+brew "gd"
+brew "gdk-pixbuf"
+brew "git-crypt"
+brew "gnu-sed", args: ["with-default-names"]
+brew "go"
+brew "gradle"
+brew "grails"
+brew "libtool"
+brew "graphviz"
+brew "grc"
+brew "groovy"
+brew "icu4c"
+brew "hicolor-icon-theme"
+brew "pango"
+brew "gtk+"
+brew "hub"
+brew "hugo"
+brew "imagemagick"
+brew "irssi", args: ["with-dante"]
+brew "jboss-forge"
+brew "jmeter", args: ["with-plugins"]
+brew "jp2a"
+brew "oniguruma"
+brew "jq"
+brew "kubernetes-cli"
+brew "lastpass-cli"
+brew "libass"
+brew "libbluray"
+brew "libbs2b"
+brew "libcaca"
+brew "libevent"
+brew "libgsm"
+brew "libmodplug"
+brew "libsoxr"
+brew "libvidstab"
+brew "libvpx"
+brew "maven"
+brew "media-info"
+brew "mongodb"
+brew "msgpack"
+brew "multitail"
+brew "nmap", args: ["with-pygtk"]
+brew "no-more-secrets"
+brew "node"
+brew "opencore-amr"
+brew "openh264"
+brew "opus"
+brew "p7zip"
+brew "phantomjs"
+brew "plantuml"
+brew "pv"
+brew "py2cairo"
+brew "pygobject"
+brew "pygtk"
+brew "roundup"
+brew "rtmpdump"
+brew "rubberband"
+brew "ruby", args: ["with-doc", "with-libffi"]
+brew "sbt"
+brew "scala", args: ["with-docs", "with-src"]
+brew "schroedinger"
+brew "sdl2"
+brew "snappy"
+brew "spaceman-diff"
+brew "statik"
+brew "subversion"
+brew "swagger-codegen"
+brew "tesseract"
+brew "texi2html"
+brew "theora"
+brew "tmate"
+brew "tree"
+brew "two-lame"
+brew "typesafe-activator"
+brew "uncrustify"
+brew "unrar"
+brew "watch"
+brew "wavpack"
+brew "wget"
+brew "x265"
+brew "xhyve"
+brew "yarn"
+brew "yasm"
+brew "zeromq"
+brew "drone/drone/drone"
+cask "mkchromecast"
+cask "soundflower"
