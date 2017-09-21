@@ -10,5 +10,5 @@ dotfiles/atom.symlink/blob-store
 dotfiles/atom.symlink/recovery
 
 dotfiles/git/gitconfig.local.symlink
-
+gradle-completion
 *.local
