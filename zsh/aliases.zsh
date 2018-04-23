@@ -1,5 +1,6 @@
 alias stn='subl -n'
-alias atm='atom -n'
+alias atm='atom -n --clear-window-state'
+alias a='atom -n --clear-window-state'
 alias emacs='/usr/local/Cellar/emacs/25.1/Emacs.app/Contents/MacOS/Emacs -nw'
 alias git='$HOME/bin/git.sh'
 alias file-roller='open -a betterzip'
