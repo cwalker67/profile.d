@@ -6,5 +6,6 @@ export MVN_HOME=/usr/local/opt/maven/libexec
 export SCALA_HOME=/usr/local/opt/scala/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 
+export PATH=$PATH:$HOME/Library/Python/2.7/bin
 
 # export GRADLE_OPTS="-Xmx1024m -XX:MaxPermSize=512m"
