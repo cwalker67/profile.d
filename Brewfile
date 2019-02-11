@@ -24,7 +24,6 @@ brew "consul"
 brew "coreutils"
 brew "dante"
 brew "libev"
-brew "docker-machine-driver-xhyve"
 brew "doxygen"
 brew "gmp"
 brew "emacs", args: ["with-cocoa"]
