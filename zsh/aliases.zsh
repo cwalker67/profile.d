@@ -1,4 +1,5 @@
-alias stn='subl -n'
+#alias stn='subl -n'
+alias stn='atom -n --clear-window-state'
 alias atm='atom -n --clear-window-state'
 alias a='atom -n --clear-window-state'
 alias emacs='/usr/local/Cellar/emacs/25.1/Emacs.app/Contents/MacOS/Emacs -nw'
