@@ -5,6 +5,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 cask "adoptopenjdk/openjdk/adoptopenjdk8"
 cask "adoptopenjdk/openjdk/adoptopenjdk11"
+brew angular-cli
 brew "ack"
 brew "gh"
 brew "python"
