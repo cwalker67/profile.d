@@ -81,6 +81,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ZSH_CUSTOM=$HOME/.profile.d
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 ZSH_DISABLE_COMPFIX="true"
 
 # Which plugins would you like to load?
@@ -88,7 +92,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git wd z sublime osx brew docker vagrant kubectl vscode)
+plugins=(git wd z sublime macos brew docker vagrant kubectl vscode)
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
