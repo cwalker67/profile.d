@@ -81,10 +81,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ZSH_CUSTOM=$HOME/.profile.d
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 ZSH_DISABLE_COMPFIX="true"
 
 # Which plugins would you like to load?
