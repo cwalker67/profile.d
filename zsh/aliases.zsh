@@ -1,13 +1,7 @@
 alias stn='subl -n'
-alias atm='atom -n --clear-window-state'
-alias a='atom -n --clear-window-state'
 alias emacs='/usr/local/Cellar/emacs/25.1/Emacs.app/Contents/MacOS/Emacs -nw'
 alias giti='$HOME/bin/git.sh'
 alias file-roller='open -a betterzip'
-alias runningvms='VBoxManage list runningvms'
-alias pbcopy-noeol="tr -d '\n' | pbcopy"
-alias tl='lpass-pw TeaLeavesVPN'
-alias cpwd='pwd | pbcopy-noeol'
-alias vansible='ansible all -i /Users/cwalker/workspaces/tealeaves/vfrontend/.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory -u vagrant --private-key ~/.vagrant.d/insecure_private_key'
-alias vansible-playbook='ansible-playbook -i /Users/cwalker/workspaces/tealeaves/vfrontend/.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory --private-key=~/.vagrant.d/insecure_private_key -u vagrant'
 alias gitf='$HOME/bin/git.sh -i $HOME/.ssh/id_rsa.fadv'
+alias vi='nvim'
+
