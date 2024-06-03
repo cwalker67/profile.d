@@ -14,3 +14,4 @@ gradle-completion
 *.local
 
 themes/*
+local/
