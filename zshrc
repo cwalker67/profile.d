@@ -33,8 +33,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime macos brew docker kubectl zsh-syntax-highlighting)
-
+plugins=(fzf git sublime macos brew docker kubectl zsh-syntax-highlighting)
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
@@ -46,10 +45,12 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/li
 # User configuration
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --scrollbar --color scrollbar:red'
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/$USER/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Added by Switch CLI Installer
+export PATH=$PATH:~/.switch-cli
+alias switch=~/.switch-cli/switch-mac-intel
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -58,9 +59,16 @@ export NVM_DIR="$HOME/.nvm"
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
+# Load 1password CLI completion
+eval "$(op completion zsh)"; compdef _op op
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/walkecha/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

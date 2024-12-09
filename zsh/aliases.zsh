@@ -6,5 +6,5 @@ alias gitf='$HOME/bin/git.sh -i $HOME/.ssh/id_rsa.fadv'
 alias vi='nvim'
 alias ls='eza'      # Use eza instead of ls
 alias la='ls -la'
-alias tree='ls -T'  # directory tree
+alias l='lsd -lAh --color=always'
 
