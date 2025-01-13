@@ -4,7 +4,7 @@ alias giti='$HOME/bin/git.sh'
 alias file-roller='open -a betterzip'
 alias gitf='$HOME/bin/git.sh -i $HOME/.ssh/id_rsa.fadv'
 alias vi='nvim'
-alias ls='eza'      # Use eza instead of ls
+alias ls='lsd'      # Use eza instead of ls
 alias la='ls -la'
-alias l='lsd -lAh --color=always'
+alias l='ls -lAh --color=always'
 
