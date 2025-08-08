@@ -33,7 +33,8 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fzf git sublime macos brew docker kubectl zsh-syntax-highlighting)
+plugins=(zoxide common-aliases ssh-agent fzf git sublime macos brew docker kubectl zsh-syntax-highlighting 1password iterm2)
+
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
@@ -44,13 +45,9 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/li
 
 # User configuration
 
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --scrollbar --color scrollbar:red'
-
-
-# Added by Switch CLI Installer
-export PATH=$PATH:~/.switch-cli
-alias switch=~/.switch-cli/switch-mac-intel
+export SSH_AUTH_SOCK=$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -70,5 +67,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/walkecha/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+export PATH="/opt/homebrew/opt/kubectx/bin:$PATH"

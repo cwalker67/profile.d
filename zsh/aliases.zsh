@@ -7,4 +7,5 @@ alias vi='nvim'
 alias ls='lsd'      # Use eza instead of ls
 alias la='ls -la'
 alias l='ls -lAh --color=always'
+alias cat='bat'
 
